@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COM6338 Group Assignment</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,13 +20,43 @@
     />
   </head>
   <body>
-    <header>
-    <img class = logo src = "assets/doglogo.svg">
-      <nav class="menu">
+    <header class="column row">
+      <img class="logo" src="assets/doglogo.svg" alt="logo" />
+      <nav class="menu row">
         <a class="menu_link" href="index.html">Home</a>
         <a class="menu_link" href="">Home</a>
         <a class="menu_link" href="">Home</a>
       </nav>
     </header>
+    <main>
+      <!--Banner-->
+      <div class="banner_container center">
+        <form class="form_pet center column">
+          <label for="pet_name">What is your dog's name?<br /></label>
+          <input type="text" id="petname" name="petname" /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!--Description-->
+      <div class="description_container center row">
+        <div class="description_img"></div>
+        <div class="description_text column">
+          <h2 class="description_header">Hello, Fido!</h2>
+          <p>
+            For COM6338 Assignment 10, we have created a website that is
+            dedicated to dogs and their fellow owners. The “Walk” page will
+            display the current weather and the forecast to help decide if it is
+            okay to walk Fido. The “Facts” page will display interesting dog
+            facts that you may not already know!
+          </p>
+          <div class="description_btn row">
+            <a href="">Walk</a>
+            <a href="">Facts</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>COM6338 Group Assignment</footer>
   </body>
 </html>
