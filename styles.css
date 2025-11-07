@@ -1,0 +1,116 @@
+:root {
+  --white: #ffffff;
+  --blue: #b4e6ff;
+  --light-blue: #eaf5ff;
+  --dark-blue: #3f75a7;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  margin: 0;
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  padding: 20px;
+  background-color: var(--blue);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+  filter: invert(1);
+}
+
+.menu_link {
+  color: var(--white);
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+.banner_container {
+  background-color: var(--light-blue);
+  height: 400px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.form_pet {
+  color: var(--dark-blue);
+  font-style: italic;
+  position: absolute;
+  bottom: 100px;
+}
+
+.form_pet input {
+  margin: 10px;
+  border: none;
+}
+
+.form_pet button {
+  background-color: var(--blue);
+  color: var(--white);
+  display: block;
+  margin: 20px;
+  padding: 10px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+.description_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.description_img {
+  margin-right: 20px;
+  background-color: var(--dark-blue);
+  width: 300px;
+}
+
+.description_header {
+  font-size: xx-large;
+  font-style: italic;
+  font-family: "Fugaz One", sans-serif;
+}
+
+.description_text {
+  color: var(--dark-blue);
+  width: 50%;
+}
+.description_btn {
+  justify-content: flex-end;
+}
+.description_btn a {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 10px 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+footer{
+  margin-top: 50px;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+}
