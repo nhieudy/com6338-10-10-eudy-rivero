@@ -22,10 +22,11 @@
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
-  min-height: 100vh;
+  min-height: 100%;
+  width: 100%;
 }
 
-header {
+.nav_container {
   padding: 20px;
   background-color: var(--blue);
   align-items: center;
@@ -34,6 +35,7 @@ header {
 
 .logo {
   width: 40px;
+  padding:10px 0;
   filter: invert(1);
 }
 
@@ -43,6 +45,15 @@ header {
   padding: 0 20px;
 }
 
+footer {
+  margin-top: auto;
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+}
+
+/*For index.html*/
 .banner_container {
   background-color: var(--light-blue);
   height: 400px;
@@ -70,6 +81,7 @@ header {
   padding: 10px 0;
   border-radius: 10px;
   text-decoration: none;
+  text-align: center;
   cursor: pointer;
   border: none;
 }
@@ -81,8 +93,9 @@ header {
 
 .description_img {
   margin-right: 20px;
-  background-color: var(--dark-blue);
-  width: 300px;
+  object-fit: cover;
+  aspect-ratio: 1;
+  width: 100%;
 }
 
 .description_header {
@@ -93,24 +106,100 @@ header {
 
 .description_text {
   color: var(--dark-blue);
-  width: 50%;
+  width: 100%;
+  margin-bottom: 100px;
 }
 .description_btn {
-  justify-content: flex-end;
+  justify-content:center;
+  align-items: center;
 }
 .description_btn a {
   background-color: var(--blue);
   color: var(--white);
+  width: 80%;
   padding: 10px 20px;
+  margin-top: 10px;
   margin-right: 20px;
   border-radius: 10px;
   text-decoration: none;
+  text-align: center;
 }
 
-footer{
+/*For weather.html*/
+
+/* .weather_container {
+  height: 500px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.weather_card {
+  justify-content: space-between;
+  text-align: center;
+  width: 40%;
   margin-top: 50px;
+  padding: 30px;
+  background-color: var(--blue);
+}
+.walk_container {
+  width: 60%;
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 10px, 400px;
+}
+
+.zip_container {
+  background-color: var(--white);
+  height: 400px;
+  margin-bottom: 50px;
+}
+.form_zip {
+  color: var(--dark-blue);
+  font-style: italic;
+  bottom: 100px;
+}
+
+.form_zip input {
+  margin: 10px;
+  border: none;
+  background-color: var(--light-blue);
+  padding: 10px 20px;
+}
+
+.form_zip button {
   background-color: var(--blue);
   color: var(--white);
-  text-align: center;
-  padding: 10px;
+  display: block;
+  padding: 10px 0;
+  border-radius: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+} */
+
+
+@media screen and (min-width: 768px) {
+.nav_container{
+  flex-direction: row;
+}
+.description_container {
+flex-direction: row;
+}
+.description_btn {
+  flex-direction: row;
+  justify-content:flex-end;
+}
+.description_btn a {
+  width: 50px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.description_img{
+  margin-bottom: 100px;
+}
+.weather_container{
+  flex-direction: row;
+}
+
 }
