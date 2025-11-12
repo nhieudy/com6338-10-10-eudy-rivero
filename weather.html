@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Walk</title>
+    <title>Walks</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +21,7 @@
   </head>
   <body>
     <header>
+      <!--Nav Bar-->
       <div class="nav_container column">
         <img class="logo" src="assets/doglogo.svg" alt="logo" />
         <nav class="menu row">
@@ -30,19 +31,23 @@
         </nav>
       </div>
     </header>
+
     <main>
-        
-      <div class="weather_container">
-        <div class="weather_card">
+      <!--Weather Container-->
+      <div class="weather_container center column">
+        <div class = "walk_container column">
+
+        <div class="weather_card column">
           <p>City, State</p>
           <p>Temperature</p>
           <p>High</p>
           <p>Low</p>
           <p>Feels Like</p>
         </div>
-        
-        <div class="walk_container">
-          <h1>Is it time to walk Fido?</h1>
+
+        <!--Description Text-->
+        <div class="walk_text">
+          <h1 class = "walk_header">Is it time to walk Fido?</h1>
           <h2>Yes, it is!</h2>
           <p>
             Some pups love nothing better than a hot sunny day, while others
@@ -55,18 +60,20 @@
             Be sure to check the weather before walking!
           </p>
         </div>
-      </div>
+        </div>
 
-      <div class="zip_container">
-        <form class="form_zip">
-          <label for="zipCode">Need to change your zip code?<br /></label>
-          <input type="text" id="zipCode" name="zipCode" required /><br />
-          <button type="submit">Update</button>
-        </form>
+        <!--Zip Code Updater-->
+        <div class="zip_container">
+          <form class="form_zip">
+            <label for="zipCode">Need to change your zip code?<br /></label>
+            <input type="text" id="zipCode" name="zipCode" required /><br />
+            <button type="submit">Update</button>
+          </form>
+        </div>
+
       </div>
     </main>
-
     <footer>COM6338 Group Assignment</footer>
-    <script src="weather.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
