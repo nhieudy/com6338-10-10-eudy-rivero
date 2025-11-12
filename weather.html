@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walks</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <!--Nav Bar-->
+      <div class="nav_container column">
+        <img class="logo" src="assets/doglogo.svg" alt="logo" />
+        <nav class="menu row">
+          <a class="menu_link" href="index.html">Home</a>
+          <a class="menu_link" href="weather.html">Walks</a>
+          <a class="menu_link" href="facts.html">Facts</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!--Weather Container-->
+      <div class="weather_container center column">
+        <div class = "walk_container column">
+
+        <div class="weather_card column">
+          <p>City, State</p>
+          <p>Temperature</p>
+          <p>High</p>
+          <p>Low</p>
+          <p>Feels Like</p>
+        </div>
+
+        <!--Description Text-->
+        <div class="walk_text">
+          <h1 class = "walk_header">Is it time to walk Fido?</h1>
+          <h2>Yes, it is!</h2>
+          <p>
+            Some pups love nothing better than a hot sunny day, while others
+            would trade it in a heartbeat for a long romp in the snow. But
+            whatever your pup’s preference, there’s no getting around the fact
+            that certain temperatures just aren’t safe for outings with your
+            dog. In very hot weather, dogs are vulnerable to heatstroke and
+            dehydration. And at the opposite end of the spectrum, extreme cold
+            can cause hypothermia, frostbite, and injuries.<br /><br />
+            Be sure to check the weather before walking!
+          </p>
+        </div>
+        </div>
+
+        <!--Zip Code Updater-->
+        <div class="zip_container">
+          <form class="form_zip">
+            <label for="zipCode">Need to change your zip code?<br /></label>
+            <input type="text" id="zipCode" name="zipCode" required /><br />
+            <button type="submit">Update</button>
+          </form>
+        </div>
+
+      </div>
+    </main>
+    <footer>COM6338 Group Assignment</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
