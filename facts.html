@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COM6338 Group Assignment</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .description_header {
+        text-align: center;
+      }
+      
+      .facts-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+      }
+      
+      .fact-item {
+        text-align: center;
+        max-width: 600px;
+        margin: 1px auto;
+      }
+      
+      #factsContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="column row">
+      <img class="logo" src="assets/doglogo.svg" alt="logo" />
+      <nav class="menu row">
+        <a class="menu_link" href="index.html">Home</a>
+        <a class="menu_link" href="">Walk</a>
+        <a class="menu_link" href="facts.html">Facts</a>
+      </nav>
+    </header>
+    <main>
+      <!--Banner-->
+      <div class="banner_container center">
+        <form class="form_pet center column">
+          <label for="numFacts">Enter a number to read up to 5 cool dog facts!<br /></label>
+          <input type="number" id="numFacts" name="numFacts" min="1" max="5" /><br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!--Description-->
+      <div class="description_container center row">
+        <div class="description_text column">
+          <h2 class="description_header" style="display: none;">Dog Facts</h2>
+          <div id="factsContainer">
+            <p id="placeholderText" style="font-style: italic;">Facts will appear here!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>COM6338 Group Assignment</footer>
+    <script src="facts.js"></script>
+  </body>
+</html>
