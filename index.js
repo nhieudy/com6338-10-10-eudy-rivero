@@ -17,6 +17,7 @@ if (previousName) {
   h2.textContent = `Hello, Fido!`;
 }
 
+//Get the GeoCoding API data
 form.onsubmit = async (e) => {
   e.preventDefault();
   const zipCode = form.zipCode.value;
@@ -34,6 +35,7 @@ form.onsubmit = async (e) => {
   }
 };
 
+//Takes the Geocoding data and save the lat and lon for the weather page
 const latLon = (geoData) => {
   let name = capitalizeString(form.petName.value);
   let zipCode = form.zipCode.value;
@@ -47,6 +49,7 @@ const latLon = (geoData) => {
   form.reset();
 };
 
+//Capitlize the name of the pet
 const capitalizeString = (name) => {
   return String(name[0]).toUpperCase() + String(name).slice(1).toLowerCase();
 };
