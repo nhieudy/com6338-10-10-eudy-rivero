@@ -74,8 +74,17 @@ footer {
 }
 
 .form_pet input {
+  padding:5px 10px;
   margin: 10px;
   border: none;
+}
+
+.form_pet input::placeholder {
+  color:var(--blue);
+}
+
+input[type="text"] {
+  color: var(--dark-blue)
 }
 
 .form_pet button {

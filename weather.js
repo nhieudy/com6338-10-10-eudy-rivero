@@ -12,7 +12,7 @@ const LAT_KEY = "lat";
 const LON_KEY = "lon";
 const ZIP_KEY = "zipCode";
 
-//Header if name is inputted or not
+//Header if name is stored or not
 let previousName = localStorage.getItem("petName");
 if (previousName) {
   walkHeader.textContent = `Is it time to walk ${previousName}?`;
@@ -27,13 +27,11 @@ const getWeather = async (url) => {
     const data = await res.json();
     displayWeather(data);
   } catch (err) {
-    alert("Data error!")
+    alert("Data error!");
   }
 };
 //Display the weather data
 const displayWeather = (data) => {
-  console.log(data);
-
   //Weather Data
   const {
     name,
@@ -48,11 +46,11 @@ const displayWeather = (data) => {
   locationHeader.after(location);
 
   let temperature = document.createElement("p");
-  temperature.textContent = `${temp}\u00B0F`;
+  temperature.textContent = `${Math.round(temp)}\u00B0F`;
   tempHeader.after(temperature);
 
   let feels = document.createElement("p");
-  feels.textContent = `${feels_like}\u00B0F`;
+  feels.textContent = `${Math.round(feels_like)}\u00B0F`;
   feelsHeader.after(feels);
 
   //Determine if it's safe to walk by checking the temp

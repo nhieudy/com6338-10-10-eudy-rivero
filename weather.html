@@ -35,40 +35,43 @@
     <main>
       <!--Weather Container-->
       <div class="weather_container center column">
-        <div class = "walk_container column">
-        <!--Create this when zip code is logged-->
-        <div class="weather_card column">
-        <h2 class = "location_header">Location:</h2>
-        <h2 class = "current_header">Current Temperature:</h2>
-        <h2 class = "feels_header">Feels Like:</h2>
-        </div>
+        <div class="walk_container column">
+          <!--Create this when zip code is logged-->
+          <div class="weather_card column">
+            <h2 class="location_header">Location:</h2>
+            <h2 class="current_header">Current Temperature:</h2>
+            <h2 class="feels_header">Feels Like:</h2>
+          </div>
 
-        <!--Description Text-->
-        <div class="walk_text">
-          <h1 class = "walk_header">Is it time to walk Fido?</h1>
-          <h2 class = "walk_status">Yes, it is!</h2>
-          <p>
-            Some pups love nothing better than a hot sunny day, while others
-            would trade it in a heartbeat for a long romp in the snow. But
-            whatever your pup’s preference, there’s no getting around the fact
-            that certain temperatures just aren’t safe for outings with your
-            dog. In very hot weather, dogs are vulnerable to heatstroke and
-            dehydration. And at the opposite end of the spectrum, extreme cold
-            can cause hypothermia, frostbite, and injuries.<br /><br />
-            Be sure to check the weather before walking!
-          </p>
-        </div>
+          <!--Description Text-->
+          <div class="walk_text">
+            <h1 class="walk_header">Is it time to walk Fido?</h1>
+            <h2 class="walk_status">Enter or Update Your Zip Code!</h2>
+            <p>
+              Some pups love nothing better than a hot sunny day, while others
+              would trade it in a heartbeat for a long romp in the snow. But
+              whatever your pup’s preference, there’s no getting around the fact
+              that certain temperatures just aren’t safe for outings with your
+              dog. In very hot weather, dogs are vulnerable to heatstroke and
+              dehydration. And at the opposite end of the spectrum, extreme cold
+              can cause hypothermia, frostbite, and injuries.<br /><br />
+              This page uses Web Storage API, and the Geocoding API and Current
+              Weather API from OpenWeatherMap.com to help determine if it's safe
+              to walk your dog!<br />
+              <br />
+              Be sure to check the weather before walking!
+            </p>
+          </div>
         </div>
 
         <!--Zip Code Updater-->
         <div class="zip_container">
           <form class="form_zip">
             <label for="zipCode">Need to change your zip code?<br /></label>
-            <input type="text" id="zipCode" name="zipCode" required /><br />
+            <input type="text" id="zipCode" name="zipCode" placeholder="Zip Code" required /><br />
             <button type="submit">Update</button>
           </form>
         </div>
-
       </div>
     </main>
     <footer>COM6338 Group Assignment</footer>
