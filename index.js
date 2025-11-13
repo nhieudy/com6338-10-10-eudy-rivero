@@ -8,7 +8,7 @@ const LON_KEY = "lon";
 let pet = localStorage.getItem(PET_KEY);
 let previousName = localStorage.getItem("petName");
 let previousZIP = localStorage.getItem("zipCode");
-const url = `http://api.openweathermap.org/geo/1.0/zip?zip=`;
+const url = `https://api.openweathermap.org/geo/1.0/zip?zip=`;
 const apikey = `&appid=61ac71fca852832313e86693bf383076`;
 
 if (previousName) {
