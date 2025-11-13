@@ -142,6 +142,7 @@ footer {
   text-align: center;
   justify-content: space-between;
   background-color: var(--blue);
+  color:var(--dark-blue);
   border-radius: 10px;
   width: 300px;
   margin: 0 auto;
