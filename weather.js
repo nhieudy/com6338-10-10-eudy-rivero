@@ -1,6 +1,6 @@
 const lat = localStorage.getItem("lat");
 const lon = localStorage.getItem("lon");
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=61ac71fca852832313e86693bf383076`;
+const url = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=61ac71fca852832313e86693bf383076`;
 const form = document.querySelector("form");
 const div = document.querySelector(".weather_card");
 const tempHeader = document.querySelector(".current_header");
@@ -63,7 +63,7 @@ form.onsubmit = async (e) => {
     );
     const data = await res.json();
     getWeather(
-      `https://api.openweathermap.org/data/2.5/weather?lat=${data.lat}&lon=${data.lon}&units=imperial&appid=61ac71fca852832313e86693bf383076`
+      `http://api.openweathermap.org/data/2.5/weather?lat=${data.lat}&lon=${data.lon}&units=imperial&appid=61ac71fca852832313e86693bf383076`
     );
     //Save the data again, so that it displays in the case that they did not initially use home page form
     localStorage.setItem(LAT_KEY, data.lat);
