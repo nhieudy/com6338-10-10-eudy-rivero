@@ -11,6 +11,7 @@ let previousZIP = localStorage.getItem("zipCode");
 const url = `https://api.openweathermap.org/geo/1.0/zip?zip=`;
 const apikey = `&appid=61ac71fca852832313e86693bf383076`;
 
+//Header based if inputted name previously
 if (previousName) {
   h2.textContent = `Hello, ${previousName}!`;
 } else {
@@ -29,9 +30,10 @@ form.onsubmit = async (e) => {
       latLon(geoData);
     } else {
       alert("Invalid Zip Code!");
+      return;
     }
   } catch (err) {
-    alert("Incorrect Inputs!");
+    alert("Data Error!");
   }
 };
 
