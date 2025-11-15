@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>COM6338 Group Assignment</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="facts.css" />
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -18,33 +19,9 @@
       href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      .description_header {
-        text-align: center;
-      }
-      
-      .facts-list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-      }
-      
-      .fact-item {
-        text-align: center;
-        max-width: 600px;
-        margin: 1px auto;
-      }
-      
-      #factsContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
   </head>
   <body>
+    <!-- Nav Bar -->
     <header class="column row">
       <img class="logo" src="assets/doglogo.svg" alt="logo" />
       <nav class="menu row">
@@ -57,7 +34,7 @@
       <!--Banner-->
       <div class="banner_container center">
         <form class="form_pet center column">
-          <label for="numFacts">Enter a number to read up to 5 cool dog facts!<br /></label>
+          <label for="numFacts">Enter a number for cool dog facts!<br /></label>
           <input type="number" id="numFacts" name="numFacts" min="1" max="5" /><br />
           <button type="submit">Submit</button>
         </form>
