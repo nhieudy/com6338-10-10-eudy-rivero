@@ -20,40 +20,46 @@
     />
   </head>
   <body>
-    <header class="column row">
-      <img class="logo" src="assets/doglogo.svg" alt="logo" />
-      <nav class="menu row">
-        <a class="menu_link" href="index.html">Home</a>
-        <a class="menu_link" href="">Walk</a>
-        <a class="menu_link" href="facts.html">Facts</a>
-      </nav>
+    <header>
+      <!--Nav Bar-->
+      <div class="nav_container column">
+        <img class="logo" src="assets/doglogo.svg" alt="logo" />
+        <nav class="menu row">
+          <a class="menu_link" href="index.html">Home</a>
+          <a class="menu_link" href="weather.html">Walks</a>
+          <a class="menu_link" href="facts.html">Facts</a>
+        </nav>
+      </div>
     </header>
+
     <main>
       <!--Banner-->
       <div class="banner_container center">
-        <form class="form_pet center column">
+        <form class="form_pet column">
           <label for="pet_name">What is your dog's name?<br /></label>
-          <input type="text" id="petName" name="petName" /><br />
+          <input type="text" id="petName" name="petName" required /><br />
+          <label for="zipCode">What is your zip code?<br /></label>
+          <input type="text" id="zipCode" name="zipCode" required /><br />
           <button type="submit">Submit</button>
         </form>
       </div>
 
       <!--Description-->
-      <div class="description_container center row">
-        <div class="description_img"></div>
-        <div class="description_text column">
-          <h2 class="description_header">Hello, Fido!</h2>
-          <p>
-            For COM6338 Assignment 10, we have created a website that is
-            dedicated to dogs and their fellow owners. The “Walk” page will
-            display the current weather and the forecast to help decide if it is
-            okay to walk your dog. The “Facts” page will display interesting dog
-            facts that you may not already know!
-          </p>
-          <div class="description_btn row">
-            <a href="">Walk</a>
-            <a href="facts.html">Facts</a>
-          </div>
+      <div class="description_container center column">
+        <img class="description_img" src="assets/dog.jpg" alt="dog photo" />
+        <div class="description_text">
+            <h2 class="description_header">Hello, Fido!</h2>
+            <p>
+              For COM6338 Assignment 10, we have created a website that is
+              dedicated to dogs and their fellow owners. The “Walk” page will
+              display the current weather and the forecast to help decide if it
+              is okay to walk your dog. The “Facts” page will display
+              interesting dog facts that you may not already know!
+            </p>
+            <div class="description_btn column">
+              <a href="">Walk</a>
+              <a href="">Facts</a>
+            </div>
         </div>
       </div>
     </main>
