@@ -25,7 +25,12 @@ const getWeather = async (url) => {
   try {
     const res = await fetch(url);
     const data = await res.json();
-    displayWeather(data);
+    //In case that lat and lon are not saved in localstorage, return/stop.
+    if (res.ok) {
+      displayWeather(data);
+    } else {
+      return;
+    }
   } catch (err) {
     alert("Data error!");
   }
