@@ -19,17 +19,28 @@
   flex-direction: row;
 }
 
+.fade_in {
+	opacity: 1;
+	animation-name: fadeIn;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: .5s;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
 body {
   margin: 0;
   font-family: "Work Sans", sans-serif;
   height: 100vh;
   width: 100%;
-}
-
-.container {
-  height: 100vh;
-  justify-content: space-between;
-  flex: grow 1;
 }
 
 .nav_container {
@@ -49,6 +60,11 @@ body {
   color: var(--white);
   text-decoration: none;
   padding: 0 20px;
+  transition: .5s;
+}
+
+.menu_link:hover{
+  color:var(--dark-blue);
 }
 
 footer {
@@ -98,9 +114,14 @@ input[type="text"] {
   text-align: center;
   cursor: pointer;
   border: none;
+  transition-duration: .5s;
 }
 
-.description_container {
+.form_pet button:hover{
+  background-color: var(--dark-blue);
+}
+
+.description_container, .weather_container{
   width: 80%;
   margin: 0 auto;
 }
@@ -137,13 +158,14 @@ input[type="text"] {
   border-radius: 10px;
   text-decoration: none;
   text-align: center;
+  transition: .5s;
+}
+
+.description_btn a:hover{
+  background-color: var(--dark-blue);
 }
 
 /*For weather.html*/
-.weather_container {
-  width: 80%;
-  margin: 0 auto;
-}
 .walk_container {
   margin: 100px 0;
 }
@@ -198,8 +220,14 @@ input[type="text"] {
   text-decoration: none;
   cursor: pointer;
   border: none;
+  transition: .5s;
 }
 
+.form_zip button:hover{
+  background-color: var(--dark-blue);
+}
+
+/* Responsive for tablet and above */
 @media screen and (min-width: 768px) {
   .nav_container {
     flex-direction: row;
