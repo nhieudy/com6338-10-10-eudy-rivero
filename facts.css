@@ -1,5 +1,47 @@
 /* Basic Styling */
 
+.banner_container {
+  background-image: url('assets/banner.jpg');
+  background-size: cover;
+  background-position: 52% center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.banner_container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(234, 245, 255, 0.55);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.banner_container > * {
+  position: relative;
+  z-index: 2;
+}
+
+.fade_in {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .description_header {
   text-align: center;
 }
@@ -47,14 +89,31 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .5s;
 }
 
-.form_pet label {
-  text-align: center;
-  margin-bottom: 0;
+.description_container {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .5s;
+}
+
+.description_container {
+  opacity: 1;
+  animation-name: fadeIn;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: .5s;
 }
 
 /* Responsive Design */
+
 @media screen and (min-width: 768px) {
   .description_container {
     flex-direction: row;
